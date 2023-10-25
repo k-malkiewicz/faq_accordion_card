@@ -3,6 +3,7 @@
 *::after {
   box-sizing: border-box;
   font-family: "Kumbh Sans", sans-serif;
+  -webkit-tap-highlight-color: transparent;
 }
 
 h1,
@@ -71,6 +72,7 @@ body {
   border-bottom: 0.0625rem solid hsl(240, 5%, 91%);
 }
 .accordion_item_question {
+  cursor: pointer;
   padding: 1rem 1rem 1rem 0;
   display: flex;
   justify-content: space-between;
@@ -79,11 +81,6 @@ body {
 }
 .accordion_item_question:hover h2 {
   color: hsl(14, 88%, 65%);
-}
-.accordion_item_question label {
-  cursor: pointer;
-  position: absolute;
-  inset: 0;
 }
 .accordion_item_question h2 {
   color: hsl(237, 12%, 33%);

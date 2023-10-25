@@ -5,6 +5,7 @@
 *::after {
     box-sizing: border-box;
     font-family: variables.$font;
+    -webkit-tap-highlight-color: transparent;
 }
 
 h1,
@@ -71,6 +72,7 @@ body {
     &_item {
         border-bottom: .0625rem solid variables.$clr-divider;
         &_question {
+            cursor: pointer;
             padding: 1rem 1rem 1rem 0;
             display: flex;
             justify-content: space-between;
@@ -78,11 +80,6 @@ body {
             position: relative;
             &:hover h2 {
                 color: variables.$clr-text-hover;
-            }
-            label {
-                cursor: pointer;
-                position: absolute;
-                inset: 0;
             }
             h2 {
                 color: variables.$clr-text-1;
