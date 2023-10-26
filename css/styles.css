@@ -65,8 +65,8 @@ body {
 }
 .accordion_item_inner {
   display: grid;
-  grid-template-rows: 1fr 0fr;
-  transition: grid-template-rows 0.2s;
+  grid-template-rows: auto 0fr;
+  transition: grid-template-rows 0.3s;
 }
 .accordion_item {
   border-bottom: 0.0625rem solid hsl(240, 5%, 91%);
@@ -111,7 +111,7 @@ body {
   outline-color: #000;
 }
 .accordion input:checked + .accordion_item_inner {
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: auto 1fr;
 }
 .accordion input:checked + .accordion_item_inner .accordion_item_question svg {
   transform: rotate(180deg);

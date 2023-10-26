@@ -66,8 +66,8 @@ body {
     position: relative;
     &_item_inner {
         display: grid;
-        grid-template-rows: 1fr 0fr;
-        transition: grid-template-rows .2s;
+        grid-template-rows: auto 0fr;
+        transition: grid-template-rows .3s;
     }
     &_item {
         border-bottom: .0625rem solid variables.$clr-divider;
@@ -111,7 +111,7 @@ body {
             outline-color: #000;
         }
         &:checked + .accordion_item_inner  {
-            grid-template-rows: 1fr 1fr;
+            grid-template-rows: auto 1fr;
             .accordion_item_question svg {
                 transform: rotate(180deg);
             }
